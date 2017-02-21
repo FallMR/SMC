@@ -1,7 +1,4 @@
-// SMC.cpp : Defines the entry point for the console application.
-//
-
-#include "stdafx.h"
+#include <stdio.h>
 #include <windows.h>
 #include <string.h>
 #include <stdlib.h>
@@ -35,9 +32,9 @@ int main(int argc, char* argv[])
 // 	return 0;
 	//
 	printf("Please input your code(less than 30 characters): ");
-	scanf("%s", input);
+	scanf_s("%s", input, 100);
 
-	crypt((unsigned char*)0x00408B01,311,(unsigned char*)0x00408B01);
+	crypt((unsigned char*)0x00408B06,312,(unsigned char*)0x00408B06);
 	
 	Node n;
 	n.x = 1, n.y = 1;
