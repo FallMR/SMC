@@ -1,0 +1,2 @@
+# SMC
+Self Modifying Code
